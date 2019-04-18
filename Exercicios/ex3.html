@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const usuarios = [
+        { nome: "Diego", idade: 23, empresa: "Rocketseat" },
+        { nome: "Gabriel", idade: 15, empresa: "Rocketseat" },
+        { nome: "Guilherme", idade: 21, empresa: "Facebook" }
+      ];
+
+      const newArray = usuarios
+        .map(usuario => ({ usuario, idade: usuario.idade * 2 }))
+        .filter(usuario => usuario.idade <= 50);
+
+      console.log(newArray);
+    </script>
+  </body>
+</html>

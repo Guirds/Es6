@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const usuarios = [
+        { nome: "Diego", idade: 23, empresa: "Rocketseat" },
+        { nome: "Gabriel", idade: 15, empresa: "Rocketseat" },
+        { nome: "Guilherme", idade: 21, empresa: "Facebook" }
+      ];
+
+      const ids = usuarios.map(function(id) {
+        return id.idade;
+      });
+
+      console.log(ids);
+
+      const filter = usuarios.filter(
+        filtro => filtro === "Rocketseat" && idade >= 18
+      );
+
+      console.log(filter);
+
+      const rocketseat18 = usuarios.filter(
+        usuario => usuario.empresa === "Rocketseat" && usuario.idade >= 18
+      );
+      console.log(rocketseat18);
+
+      const find = usuarios.find(emp => emp === "Google");
+
+      console.log(find);
+    </script>
+  </body>
+</html>
