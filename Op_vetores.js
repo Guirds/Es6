@@ -5,21 +5,19 @@ const newArr = arr.map(function(item) {
   return item * 2;
 });
 
-console.log(newArr);
-
 const sum = arr.reduce(function(total, next) {
   return total + next;
 });
-
-console.log(sum);
 
 const filter = arr.filter(function(item) {
   //vai retornar um valor true ou false, nesse caso retorna os valores pares(true) e nao retorna os valores impares(false)
   return item % 2 === 0;
 });
 
-console.log(filter);
-
 const find = arr.find(function(item) {
   return item === 4;
 }); //verifica se tem a informaçao dentro do array ou se pode encontrar
+
+console.log(newArr);
+console.log(sum);
+console.log(filter);
